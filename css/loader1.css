@@ -1,0 +1,14 @@
+.loader{
+    height: 5rem;
+}
+
+.circle{
+    background-color: chocolate;
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+}
+
+.circle:nth-child(2){
+    background-color: firebrick;
+}
