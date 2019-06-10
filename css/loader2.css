@@ -10,4 +10,14 @@
     display: inline-block;
     overflow: hidden;
     vertical-align: bottom;
+    animation: dots steps(4, end) 2s infinite;
+    /* hide the dots */ 
+    width: 0px;
+}
+
+/* show each dots */
+@keyframes dots{
+    to{
+        width: 3rem;
+    }
 }
