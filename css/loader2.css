@@ -1,0 +1,13 @@
+.loader{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 3rem;
+    color: #29276d;
+}
+
+/* add the 3 dots after the text */
+.loader::after{
+    content: '\2026';
+    display: inline-block;
+    overflow: hidden;
+    vertical-align: bottom;
+}
