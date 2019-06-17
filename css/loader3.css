@@ -1,0 +1,23 @@
+.loader{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* makes the dots */
+.loader > span{
+    display: inline-block;
+    background-color: #b3326e;
+    width: 1.6rem;
+    height: 1.6rem;
+    border-radius: 50%;
+    margin: 0 .8rem;
+}
+
+.loader > span:nth-child(2){
+    background-color: #e45f80;
+}
+
+.loader > span:nth-child(3){
+    background-color: #5f3c77;
+}
