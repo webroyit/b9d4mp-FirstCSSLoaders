@@ -8,16 +8,29 @@
 .loader > span{
     display: inline-block;
     background-color: #b3326e;
-    width: 1.6rem;
-    height: 1.6rem;
+    width: 0;
+    height: 0;
     border-radius: 50%;
     margin: 0 .8rem;
+    transition: translate3d(0, 0, 0);
+    /* alternate is the direction of the animation */
+    animation: bounce .8s infinite alternate;
 }
 
 .loader > span:nth-child(2){
     background-color: #e45f80;
+    animation-delay: .2s;
 }
 
 .loader > span:nth-child(3){
     background-color: #5f3c77;
+    animation-delay: .4s;
+}
+
+@keyframes bounce{
+    to{
+        width: 1.7rem;
+        height: 1.7rem;
+        transform: translate3d(0, -1.6rem, 0);
+    }
 }
